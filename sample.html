@@ -40,22 +40,21 @@ http://www.templatemo.com/tm-498-stimulus
 <script src="js/custom.js"></script>
 
 <script>
-window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('#### DOM fully loaded and parsed ', Tecton);
-	window.tecton = { };
-	window.tecton.connected = Tecton.connect({}).then(function(capabilities) { 
-		window.tecton.actions = capabilities.actions; 
-		window.tecton.sources = capabilities.sources; 
-		// this will turn off the spinner and show the iframe. // if you want to defer this then remove this line but call it somewhere else. 
-		capabiilties.actions.setFetching(false); 
-		console.log('#### capabiilties.actions ')
-		setTimeout(() => {
-			console.log('#### capabiilties.actions timeout')
-			capabiilties.actions.resizeIframe();
-		}, 4000);
-	});
-	
-});
+// window.addEventListener('DOMContentLoaded', (event) => {
+//     console.log('#### DOM fully loaded and parsed ', Tecton);
+// 	window.tecton = { };
+// 	window.tecton.connected = Tecton.connect({}).then(function(capabilities) { 
+// 		window.tecton.actions = capabilities.actions; 
+// 		window.tecton.sources = capabilities.sources; 
+// 		// this will turn off the spinner and show the iframe. // if you want to defer this then remove this line but call it somewhere else. 
+// 		capabiilties.actions.setFetching(false); 
+// 		console.log('#### capabiilties.actions ')
+// 		setTimeout(() => {
+// 			console.log('#### capabiilties.actions timeout')
+// 			capabiilties.actions.resizeIframe();
+// 		}, 4000);
+// 	});
+// });
 
 	
 </script>
