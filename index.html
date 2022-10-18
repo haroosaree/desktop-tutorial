@@ -402,7 +402,11 @@ window.tecton.connected = Tecton.connect({}).then(function(capabilities) {
 	window.tecton.sources = capabilities.sources; 
 	// this will turn off the spinner and show the iframe. // if you want to defer this then remove this line but call it somewhere else. 
 	capabiilties.actions.setFetching(false); 
-	capabiilties.actions.resizeIframe();
+	console.log('#### capabiilties.actions ')
+	setTimeout(() => {
+		console.log('#### capabiilties.actions timeout')
+		capabiilties.actions.resizeIframe();
+	}, 4000);
 });
 	
 </script>
