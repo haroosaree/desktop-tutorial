@@ -20,6 +20,7 @@ http://www.templatemo.com/tm-498-stimulus
 <link rel="stylesheet" href="css/templatemo-style.css">
 
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+<script src="https://cdn1.onlineaccess1.com/cdn/base/tecton/v1.17.0/q2-tecton-sdk.js"></script>
 
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -394,5 +395,17 @@ http://www.templatemo.com/tm-498-stimulus
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
 
+<script>
+window.tecton = { };
+window.tecton.connected = Tecton.connect({}).then(function(capabilities) { 
+	window.tecton.actions = capabilities.actions; 
+	window.tecton.sources = capabilities.sources; 
+	// this will turn off the spinner and show the iframe. // if you want to defer this then remove this line but call it somewhere else. 
+	capabiilties.actions.setFetching(false); 
+	capabiilties.actions.resizeIframe();
+});
+	
+</script>
+	
 </body>
 </html>
