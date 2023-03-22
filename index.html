@@ -396,6 +396,7 @@ http://www.templatemo.com/tm-498-stimulus
 
 <script>
 window.tecton = { };
+console.log('#### before connected ')
 window.tecton.connected = Tecton.connect({}).then(function(capabilities) { 
 	console.log('#### connected success')
 	window.tecton.actions = capabilities.actions; 
