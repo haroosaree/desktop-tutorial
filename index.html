@@ -397,7 +397,7 @@ http://www.templatemo.com/tm-498-stimulus
 <script>
 window.tecton = { };
 console.log('#### before connected ')
-setTimeout(() => {
+setTimeout(function() {
 	console.log('#### in setTimeout')
 	window.tecton.connected = Tecton.connect({}).then(function(capabilities) { 
 		console.log('#### connected success')
